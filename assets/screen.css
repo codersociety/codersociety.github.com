@@ -131,7 +131,6 @@ span.nav {
 }
 
 div.columns {
-	background-color: #7F171F;
 	width: 100%;
   /*padding: 1%;*/
 }
@@ -144,14 +143,13 @@ div.columns, div.column {
 }
 
 div.columns .create {
-    overflow:hidden;
-    position:relative;
+    overflow: hidden;
 }
 div.columns .group {
     right: 33.3333%;
 }
 div.columns .vote {
-    right: 66.6666%;
+    right: 33.3333%;
 }
 
 div.column {
