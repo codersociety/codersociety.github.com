@@ -132,21 +132,38 @@ span.nav {
 
 div.columns {
 	background-color: #7F171F;
-	/*padding: 1%;*/
+	width: 100%;
+  /*padding: 1%;*/
 }
+
 div.columns, div.column {
 	min-height: 600px;
 	height: 100%;
+  position: relative;
+  float: left;
+}
+
+div.columns .create {
+    overflow:hidden;
+    position:relative;
+}
+div.columns .group {
+    right: 33.3333%;
+}
+div.columns .vote {
+    right: 66.6666%;
 }
 
 div.column {
 	width: 33.3333%;
-	float: left;
+  left: 66.6666%;
+  overflow:hidden;
 }
 
 div.column h2  {
 	border-bottom: .125em solid #F4F0CB;
 }
+
 .vote{
 	background-color: #EFDD6F;
 }
