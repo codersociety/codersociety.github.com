@@ -205,7 +205,7 @@ a.tweet {
 .popup {
   display:none;
   position:absolute;
-  right:55px;
+  right:-235px;
   top:-5px;
   width:180px;
   padding:5px 20px 5px 10px;
@@ -255,8 +255,9 @@ a.tweet {
   z-index:-1000;
   font-size:12px;
   position:absolute;
-  top:-20px;
-  left:-320px;
+  /*top:-20px;
+  left:-320px;*/
+  margin-top: 5px;
   width:275px;
   background:white;
   border:2px solid #CACACA;
