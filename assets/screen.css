@@ -223,7 +223,7 @@ a.tweet {
   }
 
 .tweet:hover,
-.github-user:hover { z-index:1; }
+.github-user:hover { z-index: 200; }
 .tweet:hover .caret,
 .tweet:hover .popup,
 .github-user:hover .caret,
@@ -271,7 +271,7 @@ a.tweet {
 
   .watch-docs.active {
     opacity:100;
-    z-index:0;
+    z-index: 200;
     transition:opacity .25s, z-index 0s 0s;
     -moz-transition:opacity .25s, z-index 0s 0s;
     -webkit-transition:opacity .25s, z-index 0s 0s;
