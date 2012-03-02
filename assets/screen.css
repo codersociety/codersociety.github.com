@@ -142,11 +142,7 @@ div.columns, div.column {
   float: left;
 }
 
-.fixoverflow {
-  overflow: hidden;
-}
-
-div.columns .create {
+div.columns.create {
     overflow: hidden;
 }
 
@@ -161,7 +157,7 @@ div.column {
 	width: 33.3333333%;
   left: 66.6666666%;
 }
-div.column .create {
+div.column.create {
   left: 67%;
 }
 
