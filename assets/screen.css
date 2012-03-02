@@ -142,9 +142,14 @@ div.columns, div.column {
   float: left;
 }
 
+.fixoverflow {
+  overflow: hidden;
+}
+
 div.columns .create {
     overflow: hidden;
 }
+
 div.columns .group {
     right: 33.3333%;
 }
