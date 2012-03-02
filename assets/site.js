@@ -23,7 +23,7 @@ longneck.githubWatcherProject = function(resp) {
                 var repo = _(resp.data)
                     .chain()
                     .shuffle()
-                    //.detect(function(r) { return r.language === '{{site.github_lanaguage}}' })
+                    .detect(function(r) { return true }) //r.language === '{{site.github_lanaguage}}' })
                     .value();
 
                 if (!repo) {
