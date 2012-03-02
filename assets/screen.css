@@ -1,0 +1,138 @@
+/* 
+	Developed for Coder Society.
+	No rights reserved. 
+*/
+
+/* Basic layout classes */
+
+.left { 
+    float: left;
+}
+
+.right { 
+    float: left;
+}
+
+.clear { 
+    clear: both;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+}
+
+/* Site Defaults */
+
+* {
+    -webkit-font-smoothing: antialiased;
+    border: 0;
+    vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, h1.a, h2.a, h3.a, h4.a, h5.a, h6.a {
+    font-family: 'Holtwood One SC', serif;
+}
+
+ol, ul {
+    list-style: none; 
+    margin: 0.5em 0.75em;
+    padding: 0;
+}
+
+ol.noindent, ul.noindent { 
+   margin: 0.5em 0em;
+}
+
+blockquote, q {
+    quotes: none; 
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; 
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0; 
+}
+
+html {
+    background: #7F171F; 
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #46468C;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #464646;
+}
+
+body div.content {
+    width: auto;
+    padding: 1em 10% 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body div.banner { 
+    background: #FFF;
+    width: auto;
+    padding: 1em 10%;
+    font-family: 'Open Sans', sans-serif;
+}
+body div.footer { 
+    /*background: #685642;*/
+    color: #F7F6F4;
+    width: auto;
+    padding: 1em 10%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body div.content div.banner h1 {    
+    font-size: 3em;
+    border-top: solid 0.25em #F4F0CB;
+    border-bottom: solid 0.25em #F4F0CB; 
+    margin: 0.25em 0;
+}
+
+span.nav {    
+    margin: 0.25em 0; 
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+div.columns {
+	background-color: #7F171F;
+	/*padding: 1%;*/
+}
+div.columns, div.column {
+	min-height: 600px;
+	height: 100%;
+}
+
+div.column {
+	width: 33.3333%;
+	float: left;
+}
+
+div.column h2  {
+	margin-left: 5%;
+	margin-right: 5%;
+	border-bottom: .125em solid #F4F0CB;
+}
+.vote{
+	background-color: #EFDD6F;
+}
+.group{
+	background-color: #E49135;
+}
+.create{
+	background-color: #EFDD6F;
+}
