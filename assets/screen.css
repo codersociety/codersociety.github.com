@@ -145,8 +145,6 @@ div.column {
 }
 
 div.column h2  {
-	margin-left: 5%;
-	margin-right: 5%;
 	border-bottom: .125em solid #F4F0CB;
 }
 .vote{
@@ -158,7 +156,10 @@ div.column h2  {
 .create{
 	background-color: #EFDD6F;
 }
-
+div.section { 
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
 /* section contents */
 
