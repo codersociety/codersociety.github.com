@@ -151,23 +151,25 @@ div.columns .create {
 }
 
 div.columns .group {
-    right: 33.3333%;
+    right: 33.3333333%;
 }
 div.columns .vote {
-    right: 33.3333%;
+    right: 33.3333333%;
 }
 
 div.column {
-	width: 33.3333%;
-  left: 66.6666%;
-  overflow:hidden;
+	width: 33.3333333%;
+  left: 66.6666666%;
+}
+div.column .create {
+  left: 67%;
 }
 
 div.column h2  {
 	border-bottom: .125em solid #F4F0CB;
 }
 
-.vote{
+.vote {
 	background-color: #EFDD6F;
 }
 .group{
