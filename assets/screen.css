@@ -232,6 +232,7 @@ a.tweet {
 .github-user:hover .popup { display:block; }
 
 .buttons {
+  margin-top: 10px;
   margin-bottom: 10px;
   width: 64px;
   }
