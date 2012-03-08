@@ -295,3 +295,15 @@ a.tweet {
   font-size:11px;
   line-height:16px;
   }
+  
+  small {
+    font-style: italic; 
+    display: block;
+    margin-bottom: 10px;
+}
+
+small {
+    font-style: italic; 
+    display: block;
+    margin-bottom: 10px;
+}
