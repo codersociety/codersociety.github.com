@@ -1,12 +1,7 @@
 <div class="idea">
-	<div class="idea vote">
-		<a href="#" title="up" class="vote up"></a>
-		<a href="#" title="down" class="vote down"></a>
-	</div>
 	{% if item.slug %}<a class="slug" name="{{item.slug}}">{% endif %}
 	{% if item.title %}<h3>{{item.title}}</h3>{% endif %}
 	{% if item.slug %}</a>{% endif %}
-	{% if item.date %}<small class='date'>{{item.date | date:"%b %d %Y"}}</small>{% endif %}
 	<div class="idea description">
 		{{item.content}}
 	</div>
