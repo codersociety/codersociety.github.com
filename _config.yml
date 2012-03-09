@@ -1,7 +1,7 @@
 auto: true
 server: true
 exclude: README.md, .gitignore
-permalink: none
+permalink: pretty
 baseurl: 
 url: http://codersociety.org
 hashtag: '#codersociety OR #coder-society OR #codersocietysea OR #codersocietypdx #codersocietysfo OR #codersocietyeug OR @codersociety'
