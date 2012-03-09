@@ -5,71 +5,78 @@ rss: /blog.rss
 ---
 <div class="columns create">
 	<div class="columns group">
-    	<div class="columns vote">
-    		<div class="column vote">
-    			<div class="section">
-    				<h2>IDEAS</h2>
-    				Coming soon...
-    			</div>
+    		<div class="columns vote">
+    			<div class="column vote">
+    				<div class="section">
+    					<h2>IDEAS</h2>
+					<div class='ideas'>
+					    {% for item in site.categories['ideas'] limit:30 %}
+					    {% include idea.html %}
+					    {% endfor %}
+					</div>
+	    			</div>
 			</div>
 			<div class="column group">
 				<div class="section">
-				  <h2>MEMBERS</h2> 
-		          <div class='buttons'>
-		            <a class='watch' href='http://github.com/{{site.github_login}}/{{site.github_repo}}'>Join</a>
-		            <div class='watch-docs'>
-		              <p>Join this group by watching its repository on GitHub.</p>
-		              <ol>
-		                <li>Click on the "Join" button.</li>
-		                <li>Login to GitHub or signup for a new account.</li>
-		                <li>Click the watch button for the repo.</li>
-		              </ol>
-		              <img src='assets/watch.png'></img>
-		            </div>
-		          </div>
-		    
-		          <div class='followers clearfix'>
-		          </div>
-		      </div>
-		      <div class="section">		    
-		          <div class='follower-project clearfix'>
-		            <h2>A member's project</h2>
-		          </div>
-		      </div>
-		      <div class="section">
-		          <div class='tweets clearfix'>
-		            <h2>Recent Tweets</h2>
-		            <span>Hashtags: {{site.hashtag}}</span>
-		          </div>
-		          <div class='editing'>
-		          <p>This website is <a href='http://github.com/{{site.github_login}}/{{site.github_repo}}'>open source</a> and you can help us edit it. To submit a change, <a href='http://help.github.com/fork-a-repo/'>fork this repo</a>, commit your changes, and send us a <a href='http://help.github.com/pull-requests/'>pull request</a>.</p>
-		          </div>
-		      </div>
-		      <div class="section">
-	      	        <h2>Discussion</h2>
-			        <div id="disqus_thread"></div>
-			        <script type="text/javascript">
-			            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-			            var disqus_shortname = 'codersociety'; // required: replace example with your forum shortname
-			        
-			            /* * * DON'T EDIT BELOW THIS LINE * * */
-			            (function() {
-			                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-			                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-			                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-			            })();
-			        </script>
-			        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-			        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
-		      </div>	
+					<h2>MEMBERS</h2> 
+		          		<div class='followers clearfix'>
+		          		</div>
+	          			<div class='buttons'>
+		            			<a class='watch' href='http://github.com/{{site.github_login}}/{{site.github_repo}}'>Join</a>
+		            			<div class='watch-docs'>
+		              				<p>Join this group by watching its repository on GitHub.</p>
+	              					<ol>
+						                <li>Click on the "Join" button.</li>
+						                <li>Login to GitHub or signup for a new account.</li>
+						                <li>Click the watch button for the repo.</li>
+							</ol>
+              						<img src='assets/watch.png'></img>
+		            			</div>
+		          		</div>
+		      		</div>
+		      		<div class="section">		    
+		          		<div class='follower-project clearfix'>
+		            			<h2>A member's project</h2>
+					</div>
+				</div>
+		      		<div class="section">
+					<div class='tweets clearfix'>
+						<h2>Recent Tweets</h2>
+						<span>Hashtags: {{site.hashtag}}</span>
+		          		</div>
+		          		<div class='editing'>
+		          			<p>This website is <a href='http://github.com/{{site.github_login}}/{{site.github_repo}}'>open source</a> and you can help us edit it. To submit a change, <a href='http://help.github.com/fork-a-repo/'>fork this repo</a>, commit your changes, and send us a <a href='http://help.github.com/pull-requests/'>pull request</a>.</p>
+		          		</div>
+		      		</div>
+		      		<div class="section">
+					<h2>Discussion</h2>
+		        		<div id="disqus_thread"></div>
+				        <script type="text/javascript">
+				            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+				            var disqus_shortname = 'codersociety'; // required: replace example with your forum shortname
+				        
+				            /* * * DON'T EDIT BELOW THIS LINE * * */
+				            (function() {
+				                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+				                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+				            })();
+				        </script>
+				        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+				        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
+			      </div>	
 			</div>
 			<div class="column create">
 				<div class="section">
 					<h2>EVENTS</h2>
-					Coming soon...
+					<div class='events'>
+					    {% for item in site.categories['events'] limit:30 %}
+					    {% include event.html %}
+					    {% endfor %}
+					</div>
 				</div>
 			</div>
 			<b class="clear"></b>
-    	</div>
-    </div>
+		</div>
+	</div>
 </div>

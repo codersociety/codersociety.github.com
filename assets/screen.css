@@ -185,8 +185,8 @@ div.section {
 a.github-user,
 a.tweet {
   display:block;
-  height:48px;
-  width:48px;
+  height:64px;
+  width:64px;
   margin: 0px 4px 4px 0px;
   float:left;
   position: relative;
@@ -194,10 +194,14 @@ a.tweet {
 
 .thumb {
   display:block;
-  height:48px;
-  width:48px;
+  height:64px;
+  width:64px;
   background:white 50% 50% no-repeat;
-  background-size:48px;
+  background-size:64px;
+  border-radius: 5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border: solid 1px darkgrey;
   }
 
 .popup {
@@ -228,20 +232,21 @@ a.tweet {
 .github-user:hover .popup { display:block; }
 
 .buttons {
-  margin-bottom:10px;
-  width:205px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 64px;
   }
 
 .buttons a {
   text-align:center;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
-  line-height:36px;
+  line-height:24px;
   display:block;
   margin:0;
   padding:0;
   padding:4px;
-  color: #f2f2f2;
+  color: white;
   background: #4183C4; /*#6ab;*/
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
@@ -290,3 +295,15 @@ a.tweet {
   font-size:11px;
   line-height:16px;
   }
+  
+  small {
+    font-style: italic; 
+    display: block;
+    margin-bottom: 10px;
+}
+
+small {
+    font-style: italic; 
+    display: block;
+    margin-bottom: 10px;
+}
