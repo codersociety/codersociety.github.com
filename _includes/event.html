@@ -2,7 +2,11 @@
 	{% if item.slug %}<a class="slug" name="{{item.slug}}">{% endif %}
 	{% if item.title %}<h3>{{item.title}}</h3>{% endif %}
 	{% if item.slug %}</a>{% endif %}
-	{% if item.date %}<small class='date'>{{item.date | date:"%b %d %Y"}}</small>{% endif %}
+	{% if item.is_tbd %}
+		<small class='date'>TBD</small>
+	{% elseif item.date %}
+		<small class='date'>{{item.date | date:"%b %d %Y"}}</small>
+	{% endif %}
 	<div class="event description">
 		{{item.content}}
 	</div>
