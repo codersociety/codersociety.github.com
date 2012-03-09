@@ -302,8 +302,6 @@ a.tweet {
     margin-bottom: 10px;
 }
 
-small {
-    font-style: italic; 
-    display: block;
-    margin-bottom: 10px;
+.event .description a {
+  font-weight: bold;
 }
