@@ -4,7 +4,7 @@
 	{% if item.slug %}</a>{% endif %}
 	{% if item.is_tbd %}
 		<small class='date'>TBD</small>
-	{% elseif item.date %}
+	{% elsif item.date %}
 		<small class='date'>{{item.date | date:"%b %d %Y"}}</small>
 	{% endif %}
 	<div class="event description">
