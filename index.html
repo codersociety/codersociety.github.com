@@ -5,125 +5,78 @@ rss: /blog.rss
 ---
 <div class="columns create">
 	<div class="columns group">
-    	<div class="columns vote">
-    		<div class="column vote">
-    			<div class="section">
-    				<h2>IDEAS</h2>
-    				Coming soon...
-					<div>
-					<hr/>
-					<h3>PolyGlot Systems</h3>
-					<p>For this we would do a simple project where we 
-					pick two languages/runtimes/frameworks and have them perform different 
-					roles in an application and share information across something neutral 
-					like ZMQ or Redis. Some of the options would be to implement with C# + 
-					Node.js/JavaScript + Ruby/Sinatra is a good starting point.</p>
+    		<div class="columns vote">
+    			<div class="column vote">
+    				<div class="section">
+    					<h2>IDEAS</h2>
+					<div class='ideas'>
+					    {% for item in site.categories['ideas'] limit:30 %}
+					    {% include idea.html %}
+					    {% endfor %}
 					</div>
-
-					<div>
-					<hr/>
-					<h3>Persistence Mechanism</h3>
-					<p>Where's my persistence mechanism and why you might want to do that. Should I use 
-					MongoDB, Riak, SQLite, MySQL, SOLR/Lucene, or CouchBase to store my 
-					data? Maybe the best answer is "all of them". How to make that work? 
-					Why and when is that a good idea? Lets talk though the design 
-					considerations and then do a project that has multiple persistence 
-					mechanisms that are well orchestrated to be better than any single system.</p>
-					</div>
-
-					<div>
-					<hr/>
-					<h3>Micro-Services</h3>
-					<p>How to build a future-proof system using	micro-services and a language/platform agnostic messaging bus like 
-					ZMQ. This would show the process of writing code as a collection of 
-					miniature services that communicate over purpose built APIs using ZMQ. 
-					It would show how you can use such an architecture to seamlessly scale 
-					up from a single process to multi-process to multi-machine. Greatest 
-					thing about ZMQ is that it enables this in almost any language and on 
-					any OS. To expand on the topic, we may want to consider other queues also.</p>
-					</div>
-
-					<div>
-					<hr/>
-					<h3>Creating Public APIs</h3>
-					<p>Creating Public APIs: How to create a public API for your 
-					application. REST + JSON? Custom client libraries? C API? Lots of ways 
-					to attack this problem. Lets take an existing app, pick a strategy and 
-					then surface an API for end users to consume. Lots of challenges there 
-					like authentication, rate limiting, shaping the data, caching and 
-					consistency, etc... There are some great tools out there for making 
-					this easier.</p>
-					</div>
-
-					<div>
-					<hr/>
-					<h3>Continuous Development</h3>
-					<p>Continuous Development: How to keep code, tests and delivery to 
-					production flowing with minimal impedance creating a continuous 
-					cadence of delivering value to your end users. Specifically, building 
-					a CI/CD system using TeamCity or Jenkins + AWS, and how to build 
-					confidence in your code, tests and process in that environment.</p>
-					</div>
-    			</div>
+	    			</div>
 			</div>
 			<div class="column group">
 				<div class="section">
-				  <h2>MEMBERS</h2> 
-		          <div class='buttons'>
-		            <a class='watch' href='http://github.com/{{site.github_login}}/{{site.github_repo}}'>Join</a>
-		            <div class='watch-docs'>
-		              <p>Join this group by watching its repository on GitHub.</p>
-		              <ol>
-		                <li>Click on the "Join" button.</li>
-		                <li>Login to GitHub or signup for a new account.</li>
-		                <li>Click the watch button for the repo.</li>
-		              </ol>
-		              <img src='assets/watch.png'></img>
-		            </div>
-		          </div>
-		    
-		          <div class='followers clearfix'>
-		          </div>
-		      </div>
-		      <div class="section">		    
-		          <div class='follower-project clearfix'>
-		            <h2>A member's project</h2>
-		          </div>
-		      </div>
-		      <div class="section">
-		          <div class='tweets clearfix'>
-		            <h2>Recent Tweets</h2>
-		            <span>Hashtags: {{site.hashtag}}</span>
-		          </div>
-		          <div class='editing'>
-		          <p>This website is <a href='http://github.com/{{site.github_login}}/{{site.github_repo}}'>open source</a> and you can help us edit it. To submit a change, <a href='http://help.github.com/fork-a-repo/'>fork this repo</a>, commit your changes, and send us a <a href='http://help.github.com/pull-requests/'>pull request</a>.</p>
-		          </div>
-		      </div>
-		      <div class="section">
-	      	        <h2>Discussion</h2>
-			        <div id="disqus_thread"></div>
-			        <script type="text/javascript">
-			            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-			            var disqus_shortname = 'codersociety'; // required: replace example with your forum shortname
-			        
-			            /* * * DON'T EDIT BELOW THIS LINE * * */
-			            (function() {
-			                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-			                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-			                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-			            })();
-			        </script>
-			        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-			        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
-		      </div>	
+					<h2>MEMBERS</h2> 
+		          		<div class='followers clearfix'>
+		          		</div>
+	          			<div class='buttons'>
+		            			<a class='watch' href='http://github.com/{{site.github_login}}/{{site.github_repo}}'>Join</a>
+		            			<div class='watch-docs'>
+		              				<p>Join this group by watching its repository on GitHub.</p>
+	              					<ol>
+						                <li>Click on the "Join" button.</li>
+						                <li>Login to GitHub or signup for a new account.</li>
+						                <li>Click the watch button for the repo.</li>
+							</ol>
+              						<img src='assets/watch.png'></img>
+		            			</div>
+		          		</div>
+		      		</div>
+		      		<div class="section">		    
+		          		<div class='follower-project clearfix'>
+		            			<h2>A member's project</h2>
+					</div>
+				</div>
+		      		<div class="section">
+					<div class='tweets clearfix'>
+						<h2>Recent Tweets</h2>
+						<span>Hashtags: {{site.hashtag}}</span>
+		          		</div>
+		          		<div class='editing'>
+		          			<p>This website is <a href='http://github.com/{{site.github_login}}/{{site.github_repo}}'>open source</a> and you can help us edit it. To submit a change, <a href='http://help.github.com/fork-a-repo/'>fork this repo</a>, commit your changes, and send us a <a href='http://help.github.com/pull-requests/'>pull request</a>.</p>
+		          		</div>
+		      		</div>
+		      		<div class="section">
+					<h2>Discussion</h2>
+		        		<div id="disqus_thread"></div>
+				        <script type="text/javascript">
+				            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+				            var disqus_shortname = 'codersociety'; // required: replace example with your forum shortname
+				        
+				            /* * * DON'T EDIT BELOW THIS LINE * * */
+				            (function() {
+				                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+				                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+				            })();
+				        </script>
+				        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+				        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
+			      </div>	
 			</div>
 			<div class="column create">
 				<div class="section">
 					<h2>EVENTS</h2>
-					Coming soon...
+					<div class='events'>
+					    {% for item in site.categories['events'] limit:30 %}
+					    {% include event.html %}
+					    {% endfor %}
+					</div>
 				</div>
 			</div>
 			<b class="clear"></b>
-    	</div>
-    </div>
+		</div>
+	</div>
 </div>
