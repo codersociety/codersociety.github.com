@@ -1,0 +1,16 @@
+Stories:
+
+            A coffee drinker wants to add a rating for the coffee beverage.
+            A coffee drinker wants to list the price of the coffee beverage.
+            A coffee drinker wants to review the Barista.
+            A coffee drinker wants to rate the Barista.
+            A coffee drinker wants to know where the beverage.
+            A coffee drinker wants to know where the Barista was working.
+            A coffee drinker doesn't want to read huge reviews.
+            A Barista wants to be able to list their coffees they use.
+            A Barista wants to be able to comment on reviews.
+            A Barista wants to be able to list their prices for coffee.
+            A Barista wants to be able to select their specialty.
+            A Barista or coffee drinker wants to be able to add or view outlets, wifi, or other information about the coffee shop.
+            A coffee drinker wants to be able to “follow” their favorite Barista.
+            A Barista wants to be able to send an alert to all of their coffee drinkers.
