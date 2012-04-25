@@ -1,0 +1,1 @@
+# A coffee drinker wants to add a rating for the coffee beverage.
