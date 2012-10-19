@@ -1,0 +1,19 @@
+Stories:
+
+            DrinkerRateDrinks.feature: A coffee drinker wants to add a rating for the coffee beverage.
+            DrinkerListPrices.feature: A coffee drinker wants to list the price of the coffee beverage.
+            DrinkerReviewBarista.feature: A coffee drinker wants to review the Barista.
+            DrinkerRateBarista.feature: A coffee drinker wants to rate the Barista.
+            DrinkerLocateBeverage.feature: A coffee drinker wants to know where the beverage was consumed.
+            DrinkerLocateBarista.feature: A coffee drinker wants to know where the Barista was working.
+            DrinkerLimitReviewLength.feature: A coffee drinker doesn't want to read huge reviews.
+            DrinkerFollowBarista.feature: A coffee drinker wants to be able to “follow” their favorite Barista.
+
+            BaristaListCoffees.feature: A Barista wants to be able to list their coffees they use.
+            BaristaCommentReviews.feature: A Barista wants to be able to comment on reviews.
+            BaristaListPrices.feature: A Barista wants to be able to list their prices for coffee.
+            BaristaSelectSpecialty.feature: A Barista wants to be able to select their specialty.
+            BaristaSendAlerts.feature: A Barista wants to be able to send an alert to all of their coffee drinkers.
+
+            # User == Barista || Drinker
+            UserViewStoreInfo.feature: A Barista or coffee drinker wants to be able to add or view outlets, wifi, or other information about the coffee shop.
